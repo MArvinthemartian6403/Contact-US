@@ -1,0 +1,283 @@
+@media only screen and (max-width:375px){
+#form { 
+    display:grid;
+    grid-template-areas:
+    "h3mess h3mess h3mess h3mess"
+    "H1 H1 H1 H1"
+    "FNlabel FNlabel FNlabel FNlabel"
+    "firstname firstname firstname firstname"
+    "firstnameerror firstnameerror firstnameerror firstnameerror"
+    "LNlabel LNlabel LNlabel LNlabel"
+    "lastname lastname lastname lastname"
+    "lastnameerror lastnameerror lastnameerror lastnameerror"
+    "emaillabell emaillabel emaillabel emaillabel"
+    "email email email email"
+    "emailerror emailerror emailerror emailerror"
+    "querylabel querylabel querylabel querylabel"
+    "radioborder radioborder  radioborder radioborder"
+    "radioborder2 radioborder2 radioborder2 radioborder2"
+    "queryerror queryerror queryerror queryerror"
+    "messagelable messagelable messagelable messagelable"
+    "message message message message"
+    "messageerror messageerror messageerror messageerror"
+    "checkb checkb checkb checkb"
+    "consenterror consenterror consenterror consenterror"
+    "button button button button";
+    width:100%;
+
+
+    
+}
+#h3mess{
+grid-area:h3mess;
+visibility: visible;
+display: flex;
+width:100px;
+margin-bottom:0;
+background-color:rgb(44, 65, 68);
+color:white;
+text-align:left;
+border-radius:15px;
+margin-left:40%;
+height:100px;
+box-shadow: 2px 5px light grey;
+
+}
+    body{text-align: center;}
+}
+
+
+@font-face {
+    font-family: karla;
+    src: url(./Karla-Italic-VariableFont_wght.ttf);
+}
+body form { 
+    margin-top: 0;
+    display: grid;
+    grid-template-areas: 
+    "H1 H1 H1 . "
+    "FNlabel FNlabel LNlabel LNlabel"
+    "firstname firstname lastname lastname"
+    "firstnameerror firstnameerror lastnameerror lastnameerror"
+    "emaillabell emaillabel emaillabel emaillabel"
+    "email email email email"
+    "emailerror emailerror emailerror emailerror"
+    "querylabel querylabel querylabel querylabel"
+    "radioborder radioborder radioborder2 radioborder2"
+    "queryerror queryerror queryerror queryerror"
+    "messagelable messagelable messagelable messagelable"
+    "message message message message"
+    "messageerror messageerror messageerror messageerror"
+    "checkb checkb checkb checkb"
+    "consenterror consenterror consenterror consenterror"
+    "button button button button";
+    height: 100%;
+    font-family:karla;
+    border-radius:10px;
+    padding-left:25px;
+    padding-right:25px;
+    gap:10px;
+    background-color:#FFFFFF;
+    max-width:  1441px;
+    margin-left:35%;
+    margin-right:35%;
+    text-align: left;
+    
+
+}
+
+
+body{
+    
+    text-align: center;
+}
+.emaillabel{
+    grid-area:emaillabell;
+    margin-left:0px;
+    padding-left:0px;
+}
+.h1{
+    grid-area:H1;
+}
+
+#firstnameerror{
+    grid-area:firstnameerror;
+}
+#lastnameerror{
+grid-area:lastnameerror
+}
+#firstname{
+grid-area: firstname;
+height:30px;
+    border-radius: 10px;
+}
+
+#lastname{
+    grid-area:lastname;
+    height:30px;
+    border-radius: 10px;
+}
+.FNlabel{grid-area:FNlabel;
+    margin-left:0px;
+    padding-left:0px;
+}
+.LNlabel{grid-area:LNlabel}
+
+span{color:#0A8068;}
+
+body form h1{
+text-align: start;
+}
+#email{
+    grid-area:email;
+    height:30px;
+    border-radius: 10px;
+}
+#radioborder{
+    color:black;
+    line-height:30px;
+    grid-area:radioborder;
+    border: 1px solid black;
+    height:30px;
+    border-radius: 10px;
+}
+
+#radioborder2{
+    color:black;
+    line-height:30px;
+    grid-area:radioborder2;
+    border: 1px solid black;
+    height:30px;
+    border-radius: 10px;
+}
+#queryerror{
+    grid-area:queryerror;
+}
+.messagelable{
+    grid-area:messagelable;
+}
+#message{
+    grid-area:message;
+}
+.checkb{
+    grid-area: checkb;
+
+}
+button{
+    grid-area: button;
+}
+#querylabel{
+    grid-area:querylabel;
+}
+input[type="radio"]{
+    accent-color:#0A8068;
+}
+input[type="checkbox"]
+{
+accent-color: #0A8068;
+}
+.button{
+    height:40px;
+    border:none;
+    background-color: #0A8068;
+    color:white;
+    border-radius:10px;
+    margin-bottom: 30px;
+}
+.button:hover{
+    cursor:pointer;
+    background-color: #063F36;
+}
+body form input:hover{
+    cursor:pointer;
+    border:2px solid #0A8068;
+}
+#radioborder2:hover{
+cursor:pointer;
+}
+#radioborder:hover{
+cursor:pointer;
+}
+.checkb:hover{
+cursor: pointer;
+}
+
+body{
+    background-color: #E0F1E7;
+}
+#emailerror{
+    grid-area:emailerror;
+}
+#messageerror{
+    grid-area: messageerror;
+}
+#consenterror{
+    grid-area:consenterror;
+}
+#message{
+
+border-radius: 10px;
+overflow: hidden;
+}
+#firstnameerror{
+    color:red;
+}
+#lastnameerror{
+    color:red;
+}
+#emailerror{
+    color: red;
+}
+
+#queryerror{
+    color: red;
+}
+#messageerror{
+    color: red;
+}
+#consenterror
+{
+    color: red;
+}
+
+h4
+{
+    display:inline;
+    float:none;
+    
+}
+#h3mess
+{
+grid-area:h3mess;
+visibility: hidden;
+display: grid;
+grid-template-areas:
+". h3mess .";
+width: 400px;
+margin-bottom:0;
+background-color:rgb(44, 65, 68);
+color:white;
+text-align:left;
+border-radius:15px;
+margin-left:35%;
+height:100px;
+box-shadow: 2px 5px light grey;
+margin-left: 36.5%;
+margin-right:30%;
+}
+
+img{
+    display: inline;
+    text-align: left;
+    margin-left: 0px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    padding:1px;
+}
+div#position
+{
+    display: flexbox;
+    padding:10px;
+    padding-left: 60px;
+    
+}
