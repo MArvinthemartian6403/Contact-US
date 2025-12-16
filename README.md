@@ -1,2 +1,92 @@
-# Contact-US
-A test contact form for tech support
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    
+    <script src="sucessmess.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+</style>
+<title>Contact US</title>
+</head>
+<body>
+
+<div id="h3mess">
+    <div id="position">
+    <img alt="smallcheckbox"src="./icon-checkbox-check.svg" width=18 height=18>
+    <h4>Message sent!</h4><br>
+    <p>Thanks for submitting the for we will be in touch soon!</p>
+    </div>
+</div>
+    
+
+    
+
+<form id="form" onsubmit="post()"defer>
+    <h1 class="h1">Contact Us</h1>
+
+    <label for="firstname" class="FNlabel">Firstname <span>*</span></label>
+    <input type="text" id="firstname" name="first_name" autocomplete="on"onchange={firstname.value}> 
+    <div id="firstnameerror"></div>
+
+    <label for="lastname" class="LNlabel">Lastname <span>*</span></label>
+    <input type="text" id="lastname" name="last_name" autocomplete="lastname"onchange={lastname.value}>
+    <div id="lastnameerror"></div>
+</br>
+
+    <label for="email" class="emaillabel">Email <span>*</span></label>
+</br>
+    <input type="email" id="email" autocomplete="email" name="email">
+    <div id="emailerror"></div>
+
+    <label for="radio" id="querylabel">Query type<span>*</span></label>
+    
+    <span id="radioborder">
+        <input type="radio" title="radio" id="radio" name="General Enquiry">General Enquiry
+    </span>
+    <span id="radioborder2"> 
+        <input type="radio" id="radio2" title="radio2" name="Support Request">Support Request 
+    </span>
+    <div id="queryerror"></div>
+
+    <label for="message" class="messagelable">Message <span >*</span></label>
+    <textarea cols=10 rows=6 id="message" name="textarea"></textarea>
+    <div id="messageerror"></div>
+    <div class="checkb">
+    <input type="checkbox" id="checkbox" placeholder=# name="contact_me">I consent to being contacted by the team</div>
+    <div id="consenterror"></div>
+
+    <button type="button" class="button" tittle="but" onclick="check()">Submit</button>
+
+    
+</form>
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
